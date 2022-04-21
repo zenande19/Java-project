@@ -1,0 +1,52 @@
+package ac.za.wsu.s.circle;
+
+public class circle {
+    private final float radius = 0.0F;
+    private final int x;
+    private final int y;
+
+    private circle(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public float getArea(){
+        return (float) (this.radius * Math.PI * this.radius);
+    }
+    public float getDiameter()
+    {
+        return 2 * this.radius;
+    }
+    public float getCircumference()
+    {
+        return (float) (2 * this.radius * Math.PI);
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void  main(String[] arg) {
+
+        circle myCircle2 = new circle(x, y);
+
+        System.out.println("The area of the Circle is :" + myCircle2.getArea());
+        System.out.println("The circumference; of the Circle is:" + myCircle2.getCircumference());
+        System.out.println(myCircle2.getDiameter() + "The diameter; of the Circle is :");
+        System.out.println("The x co-0ordinate ;of the circle is :" + myCircle2.getX());
+                System.out.println("The y co-ordinate; of the Circle is :"+ myCircle2.getY());
+                System.out.println("The value of radius is : " + myCircle2. getRadius());
+    }
+
+    private String getRadius() {
+        return null;
+    }
+
+}
+
+
+
